@@ -66,12 +66,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:12.1.1":
-  version: 12.1.1
-  resolution: "@next/eslint-plugin-next@npm:12.1.1"
+"@next/eslint-plugin-next@npm:12.1.2":
+  version: 12.1.2
+  resolution: "@next/eslint-plugin-next@npm:12.1.2"
   dependencies:
     glob: 7.1.7
-  checksum: d000ef39511d111f8184e4caa2175234974473015d7ec4a6164d3a50da83ecfd1b987c0d53d9c34a8afed3031b3b42b6ac4a619794a9b8011dbd0c168c4b5567
+  checksum: fe794870684ea939d0ee0fe12207baf120e165456228c3e8a55f746345167771de2b9624d3f472538fcaf687cf427b9308691085841d303e4ab5179ea4c05a95
   languageName: node
   linkType: hard
 
@@ -193,6 +193,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/eslint@npm:^8":
+  version: 8.4.1
+  resolution: "@types/eslint@npm:8.4.1"
+  dependencies:
+    "@types/estree": "*"
+    "@types/json-schema": "*"
+  checksum: b5790997ee9d3820d16350192d41849b0e2448c9e93650acac672ddf502e35c0a5a25547172a9eec840a96687cd94ba1cee672cbd86640f8f4ff1b65960d2ab9
+  languageName: node
+  linkType: hard
+
+"@types/estree@npm:*":
+  version: 0.0.51
+  resolution: "@types/estree@npm:0.0.51"
+  checksum: e56a3bcf759fd9185e992e7fdb3c6a5f81e8ff120e871641607581fb3728d16c811702a7d40fa5f869b7f7b4437ab6a87eb8d98ffafeee51e85bbe955932a189
+  languageName: node
+  linkType: hard
+
+"@types/json-schema@npm:*":
+  version: 7.0.11
+  resolution: "@types/json-schema@npm:7.0.11"
+  checksum: 527bddfe62db9012fccd7627794bd4c71beb77601861055d87e3ee464f2217c85fca7a4b56ae677478367bbd248dbde13553312b7d4dbc702a2f2bbf60c4018d
+  languageName: node
+  linkType: hard
+
 "@types/json5@npm:^0.0.29":
   version: 0.0.29
   resolution: "@types/json5@npm:0.0.29"
@@ -204,6 +228,13 @@ __metadata:
   version: 17.0.23
   resolution: "@types/node@npm:17.0.23"
   checksum: a3517554737cbb042e76c30d0e5482192ac4d9bea0eeb086e2622d9cabf460a0eb52a696b99fcd18e7fcc93c96db6cc7ae507f6608f256ef0b5c1d8c87a5a470
+  languageName: node
+  linkType: hard
+
+"@types/prettier@npm:^2":
+  version: 2.4.4
+  resolution: "@types/prettier@npm:2.4.4"
+  checksum: 2c2cc57efd49c7d8907415a72f96c84a6dd8696dd3bf8aa4ca3a667427bebf71cbfbc912673624bdfc935d272d1c008c639cf155f6449315990a4dc110f0d216
   languageName: node
   linkType: hard
 
@@ -661,11 +692,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:12.1.1":
-  version: 12.1.1
-  resolution: "eslint-config-next@npm:12.1.1"
+"eslint-config-next@npm:^12.1.2":
+  version: 12.1.2
+  resolution: "eslint-config-next@npm:12.1.2"
   dependencies:
-    "@next/eslint-plugin-next": 12.1.1
+    "@next/eslint-plugin-next": 12.1.2
     "@rushstack/eslint-patch": 1.0.8
     "@typescript-eslint/parser": 5.10.1
     eslint-import-resolver-node: 0.3.4
@@ -681,7 +712,7 @@ __metadata:
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 2e9f76e3fd4d97c840b40d02f7fb46d8618e77e278a7681b3158c337e7164df2f0340c965c130a3031ab1dbeb8ab7330e93fbdee473940063d692b70757c0ac6
+  checksum: aca26dd0abcf5334b8aea1d773c0be213d6eed945e524e492cdaffc242bea10c61cf936b1ef022d604dd27579e9b5971c00d156636aebab0aa4edffb5967494a
   languageName: node
   linkType: hard
 
@@ -844,7 +875,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:8.12.0":
+"eslint@npm:^8.12.0":
   version: 8.12.0
   resolution: "eslint@npm:8.12.0"
   dependencies:
@@ -1023,11 +1054,14 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "frontend@workspace:."
   dependencies:
+    "@types/eslint": ^8
     "@types/node": ^17.0.23
+    "@types/prettier": ^2
     "@types/react": 17.0.43
-    eslint: 8.12.0
-    eslint-config-next: 12.1.1
+    eslint: ^8.12.0
+    eslint-config-next: ^12.1.2
     next: 12.1.1
+    prettier: ^2.6.1
     react: 17.0.2
     react-dom: 17.0.2
     typescript: 4.6.3
@@ -1818,6 +1852,15 @@ __metadata:
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
   checksum: cd192ec0d0a8e4c6da3bb80e4f62afe336df3f76271ac6deb0e6a36187133b6073a19e9727a1ff108cd8b9982e4768850d413baa71214dd80c7979617dca827a
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "prettier@npm:2.6.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 78be1f8a3ddfad7c3d8a854b6c8941a3bb1ddfca4225c38d778e0fe1029a55368f71b3bbefff82c689015fbb4d391ec44add957f01308ad2725e01a7c1f37cb6
   languageName: node
   linkType: hard
 
