@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format:w": "yarn prettier -w '**/*.{ts,tsx,yml,json,md}'",
     "format:c": "yarn prettier -c '**/*.{ts,tsx,yml,json,md}'",
-    "cypress": "cypress open"
+    "cypress:open": "yarn dev & cypress open"
   },
   "dependencies": {
     "@chakra-ui/react": "^1.8.7",
