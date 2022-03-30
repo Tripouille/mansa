@@ -7,8 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "cypress": "cypress open",
-    "test": "jest --watch"
+    "cypress": "cypress open"
   },
   "dependencies": {
     "next": "12.1.1",
