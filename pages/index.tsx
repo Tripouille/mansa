@@ -9,9 +9,9 @@ const Home: NextPage = () => {
     <Box bgColor="gray.100" h="100vh">
       <Header />
       <chakra.main px={[5, 20]} py={5}>
-        <VStack align='left' spacing={10}>
-            <UserInformations />
-            <CompanyInformations />
+        <VStack align="left" spacing={10}>
+          <UserInformations />
+          <CompanyInformations />
         </VStack>
       </chakra.main>
     </Box>
