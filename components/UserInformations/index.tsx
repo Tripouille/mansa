@@ -1,26 +1,19 @@
-import { FC } from 'react';
-import { Avatar, HStack, Skeleton, SkeletonCircle } from '@chakra-ui/react';
+import { Avatar, HStack, Skeleton, SkeletonCircle, Text } from '@chakra-ui/react';
 import { Heading } from '@chakra-ui/react';
 import { useUserQuery } from 'services/user';
+import UserInformationsSkeleton from './UserInformationsSkeleton';
 
-const UserInformations: FC = () => {
+const UserInformations = () => {
   const { data: user, isFetching, isError, isSuccess } = useUserQuery();
 
   if (isFetching) {
-    return (
-      <HStack align="center" spacing={3} py={3} data-cy="user-informations">
-        <SkeletonCircle size="50px" flexShrink={0} />
-        <Skeleton w="350px" h="40px" />
-      </HStack>
-    );
+    return <UserInformationsSkeleton />;
   }
 
   if (isError) {
     return (
       <HStack align="center" spacing={3} py={3} data-cy="user-informations">
-        <Heading as="h1" fontWeight="semibold">
-          Unaivalable user informations
-        </Heading>
+        <Text>Unavailable user informations</Text>
       </HStack>
     );
   }
