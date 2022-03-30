@@ -8,7 +8,7 @@ const UserInformations: FC = () => {
 
   if (isFetching) {
     return (
-      <HStack align="center" spacing={3} padding={3}>
+      <HStack align="center" spacing={3} padding={3} data-cy="user-informations">
         <SkeletonCircle size="50px" flexShrink={0} />
         <Skeleton w="350px" h="40px" />
       </HStack>
@@ -17,7 +17,7 @@ const UserInformations: FC = () => {
 
   if (isError) {
     return (
-      <HStack align="center" spacing={3} padding={3}>
+      <HStack align="center" spacing={3} padding={3} data-cy="user-informations">
         <Heading as="h1" fontWeight="semibold">
           Unaivalable user informations
         </Heading>
@@ -29,7 +29,7 @@ const UserInformations: FC = () => {
     const { first: firstname, last: lastname } = user.name;
 
     return (
-      <HStack align="center" spacing={3} padding={3}>
+      <HStack align="center" spacing={3} padding={3} data-cy="user-informations">
         <Avatar name={`${lastname} ${firstname}`} bgColor="primary" />
         <Heading as="h1" fontWeight="semibold">
           {lastname.toUpperCase()} {firstname}
