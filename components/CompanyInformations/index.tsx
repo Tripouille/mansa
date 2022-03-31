@@ -26,7 +26,7 @@ const CompanyInformations = () => {
         </Heading>
         <VStack spacing={1} align="left">
           <Text>Name: {name}</Text>
-          <Text>Siret: {siret}</Text>
+          <Text>SIRET: {siret}</Text>
           <Text>Address: {address}</Text>
         </VStack>
       </article>
