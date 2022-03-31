@@ -20,12 +20,13 @@ const UserInformations = () => {
 
   if (isSuccess) {
     const { first: firstname, last: lastname } = user.name;
+    const fullName = `${lastname.toUpperCase()} ${firstname}`;
 
     return (
       <HStack align="center" spacing={3} data-cy="user-informations">
-        <Avatar name={`${lastname} ${firstname}`} bgColor="primary" />
+        <Avatar name={fullName} bgColor="primary" />
         <Heading as="h1" fontWeight="semibold">
-          {lastname.toUpperCase()} {firstname}
+          {fullName}
         </Heading>
       </HStack>
     );
