@@ -1,4 +1,4 @@
-import { Avatar, HStack, Skeleton, SkeletonCircle, Text } from '@chakra-ui/react';
+import { Avatar, HStack, Text } from '@chakra-ui/react';
 import { Heading } from '@chakra-ui/react';
 import { useUserQuery } from 'services/user';
 import UserInformationsSkeleton from './UserInformationsSkeleton';
