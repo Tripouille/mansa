@@ -22,7 +22,7 @@ const UserInformations = () => {
     const { first: firstname, last: lastname } = user.name;
 
     return (
-      <HStack align="center" spacing={3} py={3} data-cy="user-informations">
+      <HStack align="center" spacing={3} data-cy="user-informations">
         <Avatar name={`${lastname} ${firstname}`} bgColor="primary" />
         <Heading as="h1" fontWeight="semibold">
           {lastname.toUpperCase()} {firstname}
