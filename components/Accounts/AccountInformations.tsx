@@ -18,6 +18,7 @@ const AccountInformations: FC<AccountInformationsProps> = ({ account }) => {
       borderWidth={1}
       borderRadius="lg"
       bgColor="primaryBackground"
+      data-cy="account-informations"
     >
       <Flex justify="space-between" fontWeight="semibold">
         <Text mr={1}>Account Number:</Text>
