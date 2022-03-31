@@ -4,7 +4,7 @@ import { AccountsQueryResponse } from './types';
 export const BASE_URL = 'https://kata.getmansa.tech';
 
 export enum Endpoints {
-  Accounts = 'accounts',
+  ACCOUNTS = 'accounts',
 }
 
 export const account = createApi({
@@ -16,7 +16,7 @@ export const account = createApi({
   endpoints: builder => ({
     accounts: builder.query<AccountsQueryResponse, void>({
       query: () => ({
-        url: Endpoints.Accounts,
+        url: Endpoints.ACCOUNTS,
       }),
     }),
   }),
